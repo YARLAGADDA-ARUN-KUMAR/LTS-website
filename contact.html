@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Arun kumar">
+    <meta name="description" content="contact for LITTLE TACO SHOP">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/html-logo.png" type="image/x-icon">
+    <title>Contact us - LTS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__h1">Little Taco Shop</h1>
+
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li">
+                    <a href="/">Home</a>
+                </li>
+                <li class="header__li">
+                    <a href="/#MENU">Menu</a>
+                </li>
+                <li class="header__li">
+                    <a href="hours.html">Hours</a>
+                </li>
+                <li class="header__li">
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <figure>
+            <img src="img/tacos3.jpg" alt="tacos" title="LTS" width="1000" height="408" loading="lazy">
+            <figcaption class="offscreen">Tacos With Friends</figcaption>
+        </figure>
+    </section>
+
+    <main class="main">
+        <article class="main__article contact">
+            <h2 class="contact__h2">Our Contact Form</h2>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Send Us Message</legend>
+
+                    <p class="contact__p">
+                        <label class="contact__label" for="name">Name : </label>
+                        <input class="contact__input" type="text" name="name" id="name" placeholder="your name" required>
+                    </p>
+
+                    <p class="contact__p">
+                        <label class="contact__label" for="gmail">G-mail : </label>
+                        <input class="contact__input" type="text" name="gmail" id="gmail" placeholder="your gmail" required>
+                    </p>
+
+                    <p class="contact__p">
+                        <label class="contact__label" for="message">Your message : </label>
+                        <textarea class="contact__textarea" rows="10" cols="30" name="message" id="message" placeholder="Type your message here" required></textarea>
+                    </p>
+                </fieldset>
+
+                <button class="contact__button" type="submit">Send</button>
+                <button class="contact__button" type="reset">Reset</button>
+            </form>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <pre style="text-align: center;"><span class="nowrap">Copyright &copy;</span><span class="nowrap">The Little Taco Shop</span></pre>
+    </footer>
+</body>
+</html>
